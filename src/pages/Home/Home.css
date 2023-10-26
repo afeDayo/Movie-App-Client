@@ -1,0 +1,44 @@
+/* step 85 */
+
+.carousel_item img {
+  width: 240px;
+  height: 140px;
+  /* aspect-ratio: 16 / 9; */
+}
+
+.inner_carousel {
+  /* overflow: hidden; */
+  overflow-x: scroll;
+}
+
+.inner_carousel::-webkit-scrollbar {
+  width: 0;
+}
+
+@media (width > 768px) {
+  .carousel_item img {
+    width: 470px;
+    height: 230px;
+  }
+}
+
+@media (width > 1200px) {
+  .carousel {
+    max-width: calc(100vw - 202px);
+  }
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.carousel_item div > span::before {
+  content: "• ";
+  color: var(--very-light-gray);
+}
+
+.carousel_item div p:nth-of-type(2):before,
+.carousel_item div p:nth-of-type(2):before {
+  content: "• ";
+  color: var(--very-light-gray);
+}
